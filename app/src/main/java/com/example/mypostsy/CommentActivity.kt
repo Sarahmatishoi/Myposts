@@ -65,7 +65,7 @@ fun getComment(){
         override fun onResponse(call: Call<List<Comments>>, response: Response<List<Comments>>) {
          var comment=response.body()!!
             var commentadapter=CommentViewHolder(comment)
-            rvComment.Adapter=commentadapter
+            rvComment.Adapter =commentadapter
             rvComment.layoutManger=LinearLayoutManager(baseContext)
         }
 
